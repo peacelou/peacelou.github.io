@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>task on PeaceLou</title>
+        <link>https://peacelou.github.io/categories/task/</link>
+        <description>Recent content in task on PeaceLou</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 05 Mar 2023 15:30:21 +0300</lastBuildDate><atom:link href="https://peacelou.github.io/categories/task/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test1</title>
+        <link>https://peacelou.github.io/p/test1/</link>
+        <pubDate>Sun, 05 Mar 2023 15:30:21 +0300</pubDate>
+        
+        <guid>https://peacelou.github.io/p/test1/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1516711923969-3fdc2fb85645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="Featured image of post Test1" /&gt;&lt;p&gt;This is a test.&lt;/p&gt;
+&lt;p&gt;Hello world!&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
