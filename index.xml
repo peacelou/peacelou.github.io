@@ -6,23 +6,45 @@
         <description>Recent content on PeaceLou</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 06 Mar 2023 16:51:20 +0300</lastBuildDate><atom:link href="https://peacelou.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>我好骚啊2</title>
-        <link>https://peacelou.github.io/p/%E6%88%91%E5%A5%BD%E9%AA%9A%E5%95%8A2/</link>
-        <pubDate>Mon, 06 Mar 2023 16:51:20 +0300</pubDate>
+        <lastBuildDate>Mon, 06 Mar 2023 23:47:23 +0300</lastBuildDate><atom:link href="https://peacelou.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>丢失文件这件事</title>
+        <link>https://peacelou.github.io/p/%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E8%BF%99%E4%BB%B6%E4%BA%8B/</link>
+        <pubDate>Mon, 06 Mar 2023 23:47:23 +0300</pubDate>
         
-        <guid>https://peacelou.github.io/p/%E6%88%91%E5%A5%BD%E9%AA%9A%E5%95%8A2/</guid>
-        <description>&lt;p&gt;Why?&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Test1</title>
-        <link>https://peacelou.github.io/p/test1/</link>
-        <pubDate>Sun, 05 Mar 2023 15:30:21 +0300</pubDate>
-        
-        <guid>https://peacelou.github.io/p/test1/</guid>
-        <description>&lt;img src="https://images.unsplash.com/photo-1516711923969-3fdc2fb85645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="Featured image of post Test1" /&gt;&lt;p&gt;This is a test.&lt;/p&gt;
-&lt;p&gt;Hello world!&lt;/p&gt;
+        <guid>https://peacelou.github.io/p/%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E8%BF%99%E4%BB%B6%E4%BA%8B/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1516711923969-3fdc2fb85645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="Featured image of post 丢失文件这件事" /&gt;&lt;h2 id=&#34;what-happened&#34;&gt;What happened&lt;/h2&gt;
+&lt;h3 id=&#34;删除&#34;&gt;删除&lt;/h3&gt;
+&lt;p&gt;当打开Word文档无法编辑，只能查看时，我感觉这可能是文件位置的问题，所以决定将所有文件移动到桌面上。我选中了所有文件并将它们拖到了桌面上，但是并没有看到进度条，认为所有文件已经成功移动，于是就将原位置的文件删除了。&lt;/p&gt;
+&lt;h3 id=&#34;清理&#34;&gt;清理&lt;/h3&gt;
+&lt;p&gt;Lemon提醒我废纸篓中的文件超过1G是否要清理，我下意识地点击了清理，之后发现桌面上有好多文件夹的图标都是灰色的，拷贝并没有完全完成。&lt;/p&gt;
+&lt;h3 id=&#34;覆盖&#34;&gt;覆盖&lt;/h3&gt;
+&lt;p&gt;在这种情况下，正确的操作应该是立即停止对磁盘的任何操作。但是我没有意识到这一点，而是马上按了撤回。虽然有一小部分文件得以恢复，但我又对这些文件进行了删除操作（迷之操作）。这相当于重新写入了废纸篓的空间，完全覆盖了之前的文件痕迹。&lt;/p&gt;
+&lt;h2 id=&#34;try-to-solve&#34;&gt;Try to solve&lt;/h2&gt;
+&lt;p&gt;开始去网上搜解决方法，这时候已经有种预感大概率是完全无法恢复了&lt;/p&gt;
+&lt;h3 id=&#34;通过time-machine来恢复mac文件&#34;&gt;通过Time machine来恢复Mac文件&lt;/h3&gt;
+&lt;p&gt;发现我并没有开启这个功能，这需要外接一个硬盘用于备份&lt;/p&gt;
+&lt;h3 id=&#34;借助专业软件来恢复mac文件&#34;&gt;借助专业软件来恢复Mac文件&lt;/h3&gt;
+&lt;p&gt;并没有扫描到我想恢复的文件&lt;/p&gt;
+&lt;h3 id=&#34;万能淘宝&#34;&gt;万能淘宝&lt;/h3&gt;
+&lt;p&gt;确实有数据恢复服务，300RMB，具体描述了我的一番操作以后，客服回“不行，勿回”&lt;/p&gt;
+&lt;h2 id=&#34;后续收尾&#34;&gt;后续收尾&lt;/h2&gt;
+&lt;h3 id=&#34;整理了一下残存的文件&#34;&gt;整理了一下残存的文件&lt;/h3&gt;
+&lt;p&gt;丢失的比较重要的内容：5篇论文的代码，一个包含着论文中PPT画图的原文件。想起来之前为了在另外一台station上跑代码，上传过一些文件到Google Drive，果然找回来了2份代码。&lt;/p&gt;
+&lt;h3 id=&#34;lemon废纸篓清理功能&#34;&gt;Lemon废纸篓清理功能&lt;/h3&gt;
+&lt;p&gt;还是没关掉这个功能，但下次一定不直接点清理，会看一眼废纸篓内容再清理。&lt;/p&gt;
+&lt;h3 id=&#34;time-machine&#34;&gt;Time machine&lt;/h3&gt;
+&lt;p&gt;用硬盘对整个电脑进行了备份。&lt;/p&gt;
+&lt;h3 id=&#34;备份重要的文件&#34;&gt;备份重要的文件&lt;/h3&gt;
+&lt;p&gt;那个买来以后一直吃灰的三星固态硬盘终于有用武之地了。 确实电脑的空间不太够，只有100多个G了，确实需要把一些不常用的资料转移到硬盘上。&lt;/p&gt;
+&lt;p&gt;同时也往Google Drive上传了一份&lt;/p&gt;
+&lt;h2 id=&#34;整个过程心理变化&#34;&gt;整个过程心理变化&lt;/h2&gt;
+&lt;p&gt;一开始我还以为能够恢复被误删的文件，maybe有点盲目乐观。&lt;/p&gt;
+&lt;p&gt;看到 “如果你删除文件后清空废纸篓，请立即停止删除文件或储存资料到计算机。 否则，原本被删除的mac文件可能会被覆盖，此时，你就再也找不回文件了。” 后， 开始接受事实，倒也没有很沮丧或者自责，就感觉有点麻烦吧。&lt;/p&gt;
+&lt;p&gt;在与淘宝客服的对话中，他说“不行，勿回”，直接给我判了死刑。之前我始终抱有“也许有万一”的期望，但在听到这句话后，我意识到这个文件真的找不回来了。整个人感到非常焦虑，开始和外界交流，倾诉这件事，聊的过程中我逐渐平静下来，完全接受了这个事实，开始考虑接下来的补救措施。&lt;/p&gt;
+&lt;p&gt;我开始对电脑进行整理和备份，并在Google Drive上找到了两份代码，这算是意外之喜。整理完成后，完全feel at peace了。&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;这件事让我想起前段时间发生的意外：边骑滑板边看手机，最后摔了一跤，导致自己一身伤 + broken scooter。之前的意外可能只是一些💰上的损失，但是这次的事情却牵涉到科研，代码丢失会对后续的回复信和仿真部分的修改都会产生影响。吃一堑长一智，flag定期备份文件。&lt;/p&gt;
+&lt;p&gt;另外无论发生什么事情，都要冷静面对，思考解决方案，及时用正确的方法去弥补和修复。没有什么是致命的，即使最终的结果不尽如人意，也要尽量平静地接受，从中吸取教训。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -36,18 +58,6 @@
  &lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;ONLY&lt;/strong&gt; way to find me is to send me an email:&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:zhengying.bolg@gmail.com&#34; &gt;zhengying.bolg@gmail.com&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>我好骚啊</title>
-        <link>https://peacelou.github.io/p/%E6%88%91%E5%A5%BD%E9%AA%9A%E5%95%8A/</link>
-        <pubDate>Wed, 02 Feb 2022 16:43:39 +0300</pubDate>
-        
-        <guid>https://peacelou.github.io/p/%E6%88%91%E5%A5%BD%E9%AA%9A%E5%95%8A/</guid>
-        <description>&lt;h2 id=&#34;我好骚啊&#34;&gt;我好骚啊&lt;/h2&gt;
-&lt;h3 id=&#34;为什么&#34;&gt;为什么&lt;/h3&gt;
-&lt;h4 id=&#34;不知道为什么&#34;&gt;不知道为什么&lt;/h4&gt;
-&lt;p&gt;哈哈哈哈哈😂&lt;/p&gt;
 </description>
         </item>
         <item>

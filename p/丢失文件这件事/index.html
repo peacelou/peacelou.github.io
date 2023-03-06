@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='What happened 删除 当打开Word文档无法编辑，只能查看时，我感觉这可能是文件位置的问题，所以决定将所有文件移动到桌面上。我选中了所有文件并将它们拖到了桌面上，但是并没有看到进度条，认为所有文件已经成功移动，于是就将原位置的文件删除了。
+清理 Lemon提醒我废纸篓中的文件超过1G是否要清理，我下意识地点击了清理，之后发现桌面上有好多文件夹的图标都是灰色的，拷贝并没有完全完成。
+覆盖 在这种情况下，正确的操作应该是立即停止对磁盘的任何操作。但是我没有意识到这一点，而是马上按了撤回。虽然有一小部分文件得以恢复，但我又对这些文件进行了删除操作（迷之操作）。这相当于重新写入了废纸篓的空间，完全覆盖了之前的文件痕迹。
+Try to solve 开始去网上搜解决方法，这时候已经有种预感大概率是完全无法恢复了
+通过Time machine来恢复Mac文件 发现我并没有开启这个功能，这需要外接一个硬盘用于备份
+借助专业软件来恢复Mac文件 并没有扫描到我想恢复的文件
+万能淘宝 确实有数据恢复服务，300RMB，具体描述了我的一番操作以后，客服回“不行，勿回”
+后续收尾 整理了一下残存的文件 丢失的比较重要的内容：5篇论文的代码，一个包含着论文中PPT画图的原文件。想起来之前为了在另外一台station上跑代码，上传过一些文件到Google Drive，果然找回来了2份代码。
+Lemon废纸篓清理功能 还是没关掉这个功能，但下次一定不直接点清理，会看一眼废纸篓内容再清理。
+Time machine 用硬盘对整个电脑进行了备份。
+备份重要的文件 那个买来以后一直吃灰的三星固态硬盘终于有用武之地了。 确实电脑的空间不太够，只有100多个G了，确实需要把一些不常用的资料转移到硬盘上。
+同时也往Google Drive上传了一份
+整个过程心理变化 一开始我还以为能够恢复被误删的文件，maybe有点盲目乐观。
+看到 “如果你删除文件后清空废纸篓，请立即停止删除文件或储存资料到计算机。 否则，原本被删除的mac文件可能会被覆盖，此时，你就再也找不回文件了。” 后， 开始接受事实，倒也没有很沮丧或者自责，就感觉有点麻烦吧。
+在与淘宝客服的对话中，他说“不行，勿回”，直接给我判了死刑。之前我始终抱有“也许有万一”的期望，但在听到这句话后，我意识到这个文件真的找不回来了。整个人感到非常焦虑，开始和外界交流，倾诉这件事，聊的过程中我逐渐平静下来，完全接受了这个事实，开始考虑接下来的补救措施。
+我开始对电脑进行整理和备份，并在Google Drive上找到了两份代码，这算是意外之喜。整理完成后，完全feel at peace了。
+Summary 这件事让我想起前段时间发生的意外：边骑滑板边看手机，最后摔了一跤，导致自己一身伤 &#43; broken scooter。之前的意外可能只是一些💰上的损失，但是这次的事情却牵涉到科研，代码丢失会对后续的回复信和仿真部分的修改都会产生影响。吃一堑长一智，flag定期备份文件。
+另外无论发生什么事情，都要冷静面对，思考解决方案，及时用正确的方法去弥补和修复。没有什么是致命的，即使最终的结果不尽如人意，也要尽量平静地接受，从中吸取教训。'>
+<title>丢失文件这件事</title>
+
+<link rel='canonical' href='https://peacelou.github.io/p/%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E8%BF%99%E4%BB%B6%E4%BA%8B/'>
+
+<link rel="stylesheet" href="/scss/style.min.1279b4b407bf0a394327f443d8ef962379570dbf116dcf2176d2046f1325b1fe.css"><script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+    
+    $(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#back-to-top').fadeIn();
+    } else {
+        $('#back-to-top').fadeOut();
+    }
+    });
+
+    
+    $('#back-to-top').click(function() {
+    $('html, body').animate({scrollTop: 0}, 1000);
+    return false;
+    });
+</script>
+
+
+<meta property='og:title' content='丢失文件这件事'>
+<meta property='og:description' content='What happened 删除 当打开Word文档无法编辑，只能查看时，我感觉这可能是文件位置的问题，所以决定将所有文件移动到桌面上。我选中了所有文件并将它们拖到了桌面上，但是并没有看到进度条，认为所有文件已经成功移动，于是就将原位置的文件删除了。
+清理 Lemon提醒我废纸篓中的文件超过1G是否要清理，我下意识地点击了清理，之后发现桌面上有好多文件夹的图标都是灰色的，拷贝并没有完全完成。
+覆盖 在这种情况下，正确的操作应该是立即停止对磁盘的任何操作。但是我没有意识到这一点，而是马上按了撤回。虽然有一小部分文件得以恢复，但我又对这些文件进行了删除操作（迷之操作）。这相当于重新写入了废纸篓的空间，完全覆盖了之前的文件痕迹。
+Try to solve 开始去网上搜解决方法，这时候已经有种预感大概率是完全无法恢复了
+通过Time machine来恢复Mac文件 发现我并没有开启这个功能，这需要外接一个硬盘用于备份
+借助专业软件来恢复Mac文件 并没有扫描到我想恢复的文件
+万能淘宝 确实有数据恢复服务，300RMB，具体描述了我的一番操作以后，客服回“不行，勿回”
+后续收尾 整理了一下残存的文件 丢失的比较重要的内容：5篇论文的代码，一个包含着论文中PPT画图的原文件。想起来之前为了在另外一台station上跑代码，上传过一些文件到Google Drive，果然找回来了2份代码。
+Lemon废纸篓清理功能 还是没关掉这个功能，但下次一定不直接点清理，会看一眼废纸篓内容再清理。
+Time machine 用硬盘对整个电脑进行了备份。
+备份重要的文件 那个买来以后一直吃灰的三星固态硬盘终于有用武之地了。 确实电脑的空间不太够，只有100多个G了，确实需要把一些不常用的资料转移到硬盘上。
+同时也往Google Drive上传了一份
+整个过程心理变化 一开始我还以为能够恢复被误删的文件，maybe有点盲目乐观。
+看到 “如果你删除文件后清空废纸篓，请立即停止删除文件或储存资料到计算机。 否则，原本被删除的mac文件可能会被覆盖，此时，你就再也找不回文件了。” 后， 开始接受事实，倒也没有很沮丧或者自责，就感觉有点麻烦吧。
+在与淘宝客服的对话中，他说“不行，勿回”，直接给我判了死刑。之前我始终抱有“也许有万一”的期望，但在听到这句话后，我意识到这个文件真的找不回来了。整个人感到非常焦虑，开始和外界交流，倾诉这件事，聊的过程中我逐渐平静下来，完全接受了这个事实，开始考虑接下来的补救措施。
+我开始对电脑进行整理和备份，并在Google Drive上找到了两份代码，这算是意外之喜。整理完成后，完全feel at peace了。
+Summary 这件事让我想起前段时间发生的意外：边骑滑板边看手机，最后摔了一跤，导致自己一身伤 &#43; broken scooter。之前的意外可能只是一些💰上的损失，但是这次的事情却牵涉到科研，代码丢失会对后续的回复信和仿真部分的修改都会产生影响。吃一堑长一智，flag定期备份文件。
+另外无论发生什么事情，都要冷静面对，思考解决方案，及时用正确的方法去弥补和修复。没有什么是致命的，即使最终的结果不尽如人意，也要尽量平静地接受，从中吸取教训。'>
+<meta property='og:url' content='https://peacelou.github.io/p/%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E8%BF%99%E4%BB%B6%E4%BA%8B/'>
+<meta property='og:site_name' content='PeaceLou'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2023-03-06T23:47:23&#43;03:00'/><meta property='article:modified_time' content='2023-03-06T23:47:23&#43;03:00'/><meta property='og:image' content='https://images.unsplash.com/photo-1516711923969-3fdc2fb85645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80' />
+<meta name="twitter:title" content="丢失文件这件事">
+<meta name="twitter:description" content="What happened 删除 当打开Word文档无法编辑，只能查看时，我感觉这可能是文件位置的问题，所以决定将所有文件移动到桌面上。我选中了所有文件并将它们拖到了桌面上，但是并没有看到进度条，认为所有文件已经成功移动，于是就将原位置的文件删除了。
+清理 Lemon提醒我废纸篓中的文件超过1G是否要清理，我下意识地点击了清理，之后发现桌面上有好多文件夹的图标都是灰色的，拷贝并没有完全完成。
+覆盖 在这种情况下，正确的操作应该是立即停止对磁盘的任何操作。但是我没有意识到这一点，而是马上按了撤回。虽然有一小部分文件得以恢复，但我又对这些文件进行了删除操作（迷之操作）。这相当于重新写入了废纸篓的空间，完全覆盖了之前的文件痕迹。
+Try to solve 开始去网上搜解决方法，这时候已经有种预感大概率是完全无法恢复了
+通过Time machine来恢复Mac文件 发现我并没有开启这个功能，这需要外接一个硬盘用于备份
+借助专业软件来恢复Mac文件 并没有扫描到我想恢复的文件
+万能淘宝 确实有数据恢复服务，300RMB，具体描述了我的一番操作以后，客服回“不行，勿回”
+后续收尾 整理了一下残存的文件 丢失的比较重要的内容：5篇论文的代码，一个包含着论文中PPT画图的原文件。想起来之前为了在另外一台station上跑代码，上传过一些文件到Google Drive，果然找回来了2份代码。
+Lemon废纸篓清理功能 还是没关掉这个功能，但下次一定不直接点清理，会看一眼废纸篓内容再清理。
+Time machine 用硬盘对整个电脑进行了备份。
+备份重要的文件 那个买来以后一直吃灰的三星固态硬盘终于有用武之地了。 确实电脑的空间不太够，只有100多个G了，确实需要把一些不常用的资料转移到硬盘上。
+同时也往Google Drive上传了一份
+整个过程心理变化 一开始我还以为能够恢复被误删的文件，maybe有点盲目乐观。
+看到 “如果你删除文件后清空废纸篓，请立即停止删除文件或储存资料到计算机。 否则，原本被删除的mac文件可能会被覆盖，此时，你就再也找不回文件了。” 后， 开始接受事实，倒也没有很沮丧或者自责，就感觉有点麻烦吧。
+在与淘宝客服的对话中，他说“不行，勿回”，直接给我判了死刑。之前我始终抱有“也许有万一”的期望，但在听到这句话后，我意识到这个文件真的找不回来了。整个人感到非常焦虑，开始和外界交流，倾诉这件事，聊的过程中我逐渐平静下来，完全接受了这个事实，开始考虑接下来的补救措施。
+我开始对电脑进行整理和备份，并在Google Drive上找到了两份代码，这算是意外之喜。整理完成后，完全feel at peace了。
+Summary 这件事让我想起前段时间发生的意外：边骑滑板边看手机，最后摔了一跤，导致自己一身伤 &#43; broken scooter。之前的意外可能只是一些💰上的损失，但是这次的事情却牵涉到科研，代码丢失会对后续的回复信和仿真部分的修改都会产生影响。吃一堑长一智，flag定期备份文件。
+另外无论发生什么事情，都要冷静面对，思考解决方案，及时用正确的方法去弥补和修复。没有什么是致命的，即使最终的结果不尽如人意，也要尽量平静地接受，从中吸取教训。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://images.unsplash.com/photo-1516711923969-3fdc2fb85645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80' />
+    <link rel="shortcut icon" href="/images/tiger.jpg" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu7e34248561f635140914738a64f67fa0_37186_300x0_resize_box_3.png" width="150"
+                            height="150" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">PeaceLou</a></h1>
+            <h2 class="site-description">Peaceful Lou</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='https://peacelou.github.io/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-happened">What happened</a>
+      <ol>
+        <li><a href="#删除">删除</a></li>
+        <li><a href="#清理">清理</a></li>
+        <li><a href="#覆盖">覆盖</a></li>
+      </ol>
+    </li>
+    <li><a href="#try-to-solve">Try to solve</a>
+      <ol>
+        <li><a href="#通过time-machine来恢复mac文件">通过Time machine来恢复Mac文件</a></li>
+        <li><a href="#借助专业软件来恢复mac文件">借助专业软件来恢复Mac文件</a></li>
+        <li><a href="#万能淘宝">万能淘宝</a></li>
+      </ol>
+    </li>
+    <li><a href="#后续收尾">后续收尾</a>
+      <ol>
+        <li><a href="#整理了一下残存的文件">整理了一下残存的文件</a></li>
+        <li><a href="#lemon废纸篓清理功能">Lemon废纸篓清理功能</a></li>
+        <li><a href="#time-machine">Time machine</a></li>
+        <li><a href="#备份重要的文件">备份重要的文件</a></li>
+      </ol>
+    </li>
+    <li><a href="#整个过程心理变化">整个过程心理变化</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E8%BF%99%E4%BB%B6%E4%BA%8B/">
+                
+                    <img src="https://images.unsplash.com/photo-1516711923969-3fdc2fb85645?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2952&amp;q=80" loading="lazy" alt="Featured image of post 丢失文件这件事" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/drama%E7%BB%8F%E5%8E%86/" >
+                Drama经历
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E4%B8%A2%E5%A4%B1%E6%96%87%E4%BB%B6%E8%BF%99%E4%BB%B6%E4%BA%8B/">丢失文件这件事</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 06, 2023</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="what-happened">What happened</h2>
+<h3 id="删除">删除</h3>
+<p>当打开Word文档无法编辑，只能查看时，我感觉这可能是文件位置的问题，所以决定将所有文件移动到桌面上。我选中了所有文件并将它们拖到了桌面上，但是并没有看到进度条，认为所有文件已经成功移动，于是就将原位置的文件删除了。</p>
+<h3 id="清理">清理</h3>
+<p>Lemon提醒我废纸篓中的文件超过1G是否要清理，我下意识地点击了清理，之后发现桌面上有好多文件夹的图标都是灰色的，拷贝并没有完全完成。</p>
+<h3 id="覆盖">覆盖</h3>
+<p>在这种情况下，正确的操作应该是立即停止对磁盘的任何操作。但是我没有意识到这一点，而是马上按了撤回。虽然有一小部分文件得以恢复，但我又对这些文件进行了删除操作（迷之操作）。这相当于重新写入了废纸篓的空间，完全覆盖了之前的文件痕迹。</p>
+<h2 id="try-to-solve">Try to solve</h2>
+<p>开始去网上搜解决方法，这时候已经有种预感大概率是完全无法恢复了</p>
+<h3 id="通过time-machine来恢复mac文件">通过Time machine来恢复Mac文件</h3>
+<p>发现我并没有开启这个功能，这需要外接一个硬盘用于备份</p>
+<h3 id="借助专业软件来恢复mac文件">借助专业软件来恢复Mac文件</h3>
+<p>并没有扫描到我想恢复的文件</p>
+<h3 id="万能淘宝">万能淘宝</h3>
+<p>确实有数据恢复服务，300RMB，具体描述了我的一番操作以后，客服回“不行，勿回”</p>
+<h2 id="后续收尾">后续收尾</h2>
+<h3 id="整理了一下残存的文件">整理了一下残存的文件</h3>
+<p>丢失的比较重要的内容：5篇论文的代码，一个包含着论文中PPT画图的原文件。想起来之前为了在另外一台station上跑代码，上传过一些文件到Google Drive，果然找回来了2份代码。</p>
+<h3 id="lemon废纸篓清理功能">Lemon废纸篓清理功能</h3>
+<p>还是没关掉这个功能，但下次一定不直接点清理，会看一眼废纸篓内容再清理。</p>
+<h3 id="time-machine">Time machine</h3>
+<p>用硬盘对整个电脑进行了备份。</p>
+<h3 id="备份重要的文件">备份重要的文件</h3>
+<p>那个买来以后一直吃灰的三星固态硬盘终于有用武之地了。 确实电脑的空间不太够，只有100多个G了，确实需要把一些不常用的资料转移到硬盘上。</p>
+<p>同时也往Google Drive上传了一份</p>
+<h2 id="整个过程心理变化">整个过程心理变化</h2>
+<p>一开始我还以为能够恢复被误删的文件，maybe有点盲目乐观。</p>
+<p>看到 “如果你删除文件后清空废纸篓，请立即停止删除文件或储存资料到计算机。 否则，原本被删除的mac文件可能会被覆盖，此时，你就再也找不回文件了。” 后， 开始接受事实，倒也没有很沮丧或者自责，就感觉有点麻烦吧。</p>
+<p>在与淘宝客服的对话中，他说“不行，勿回”，直接给我判了死刑。之前我始终抱有“也许有万一”的期望，但在听到这句话后，我意识到这个文件真的找不回来了。整个人感到非常焦虑，开始和外界交流，倾诉这件事，聊的过程中我逐渐平静下来，完全接受了这个事实，开始考虑接下来的补救措施。</p>
+<p>我开始对电脑进行整理和备份，并在Google Drive上找到了两份代码，这算是意外之喜。整理完成后，完全feel at peace了。</p>
+<h2 id="summary">Summary</h2>
+<p>这件事让我想起前段时间发生的意外：边骑滑板边看手机，最后摔了一跤，导致自己一身伤 + broken scooter。之前的意外可能只是一些💰上的损失，但是这次的事情却牵涉到科研，代码丢失会对后续的回复信和仿真部分的修改都会产生影响。吃一堑长一智，flag定期备份文件。</p>
+<p>另外无论发生什么事情，都要冷静面对，思考解决方案，及时用正确的方法去弥补和修复。没有什么是致命的，即使最终的结果不尽如人意，也要尽量平静地接受，从中吸取教训。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 PeaceLou
+    </section>
+    
+    
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
