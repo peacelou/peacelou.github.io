@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://peacelou.github.io/categories/</loc>
-    <lastmod>2023-03-05T15:30:21+03:00</lastmod>
-  </url><url>
     <loc>https://peacelou.github.io/</loc>
-    <lastmod>2023-03-05T15:30:21+03:00</lastmod>
+    <lastmod>2023-03-06T16:51:20+03:00</lastmod>
   </url><url>
     <loc>https://peacelou.github.io/post/</loc>
+    <lastmod>2023-03-06T16:51:20+03:00</lastmod>
+  </url><url>
+    <loc>https://peacelou.github.io/p/%E6%88%91%E5%A5%BD%E9%AA%9A%E5%95%8A2/</loc>
+    <lastmod>2023-03-06T16:51:20+03:00</lastmod>
+  </url><url>
+    <loc>https://peacelou.github.io/categories/</loc>
     <lastmod>2023-03-05T15:30:21+03:00</lastmod>
   </url><url>
     <loc>https://peacelou.github.io/categories/task/</loc>
